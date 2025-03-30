@@ -1,9 +1,6 @@
 import { Timestamp } from "firebase/firestore";
 import { GradeRecord } from "./grade";
 
-// Collection name in Firestore
-export const STUDENTS_COLLECTION = "students";
-
 /**
  * Student entity schema
  */
@@ -40,3 +37,6 @@ export interface StudentSearchCriteria {
   name?: string; // Filter by name (case-insensitive search)
   className?: string; // Filter by class
 }
+
+// Collection name in Firestore
+export const STUDENTS_COLLECTION = "students";

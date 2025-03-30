@@ -7,10 +7,16 @@ export interface Grade {
   id?: string;              // Firestore document ID
   studentId: string;        // Reference to student ID 
   courseId: string;         // Reference to course ID
-  value: number;            // Grade value (e.g., 8.5)
+  finalScore: number;       // Grade value (e.g., 8.5)
   semester: string;         // Semester when grade was received (e.g., 20221)
   createdAt?: Timestamp;    // When record was created
   updatedAt?: Timestamp;    // When record was last updated
+  componentScores?: {
+    attendance: number,     // Điểm TN-CC
+    midterm: number,        // Điểm TBKT
+    assignment: number,     // Điểm BTTL
+    finalExam: number | string   // Điểm Thi (Lưu ý trường hợp "C" - Cấm thi, có thể lưu null/0 và ghi chú)
+  }
 }
 
 /**
@@ -21,7 +27,7 @@ export interface GradeRecord {
   subjectCode: string;      // Course code
   subjectName: string;      // Course name
   credits: number;          // Number of credits
-  grade: number;            // Grade value
+  finalScore: number;       // Grade value
   semester?: string;        // Optional semester info
 }
 
