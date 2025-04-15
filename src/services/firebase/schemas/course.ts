@@ -4,11 +4,12 @@ import { Timestamp } from 'firebase/firestore';
  * Interface for Course entity
  */
 export interface Course {
-  id?: string;             // Firestore document ID (sẽ được tự động tạo)
-  courseId: string;        // Course code (e.g., INT1449) - Dùng làm khóa chính
-  name: string;            // Course name
-  credits: number;         // Number of credits
-  semester?: string;       // Semester when the course is offered
+  id?: string;             
+  courseId: string;        // BAS1203
+  name: string;            // Học phần
+  credits: number;         // Số tín chi
+  semester?: string;       // học kỳ
+  dateExam?: string;       // Ngày thi
   createdAt?: Timestamp;   // When record was created
   updatedAt?: Timestamp;   // When record was last updated
 }

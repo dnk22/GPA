@@ -1,0 +1,202 @@
+[
+  {
+    "id": "",
+    "courseId": "BAS1203",
+    "name": "Giải tích 1",
+    "credits": 3,
+    "semester": "I",
+    "dateExam": "15/12/24",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "id": "",
+    "courseId": "BAS1205",
+    "name": "Đại số tuyến tính",
+    "credits": 3,
+    "semester": "I",
+    "dateExam": "16/12/24",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "id": "",
+    "courseId": "FLA1101",
+    "name": "Tiếng Anh 1",
+    "credits": 3,
+    "semester": "I",
+    "dateExam": "17/12/24",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "id": "",
+    "courseId": "PHY1107",
+    "name": "Vật lý đại cương 1",
+    "credits": 3,
+    "semester": "I",
+    "dateExam": "18/12/24",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "id": "",
+    "courseId": "MIL1101",
+    "name": "Giáo dục quốc phòng - An ninh",
+    "credits": 0,
+    "semester": "I",
+    "dateExam": "19/12/24",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "id": "",
+    "courseId": "GEN1113",
+    "name": "Kỹ năng mềm",
+    "credits": 2,
+    "semester": "I",
+    "dateExam": "20/12/24",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "id": "",
+    "courseId": "EEE1109",
+    "name": "Nhập môn kỹ thuật điện tử",
+    "credits": 3,
+    "semester": "I",
+    "dateExam": "21/12/24",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "id": "",
+    "courseId": "EEE1110",
+    "name": "Thực hành Nhập môn kỹ thuật điện tử",
+    "credits": 1,
+    "semester": "I",
+    "dateExam": "22/12/24",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "id": "",
+    "courseId": "ITT1101",
+    "name": "Kỹ thuật lập trình",
+    "credits": 3,
+    "semester": "I",
+    "dateExam": "23/12/24",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "id": "",
+    "courseId": "ITT1102",
+    "name": "Thực hành Kỹ thuật lập trình",
+    "credits": 1,
+    "semester": "I",
+    "dateExam": "24/12/24",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "id": "",
+    "courseId": "ELE1433",
+    "name": "Kỹ thuật số",
+    "credits": 2,
+    "semester": "II",
+    "dateExam": "28/12/24",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "id": "",
+    "courseId": "BAS1204",
+    "name": "Giải tích 2",
+    "credits": 3,
+    "semester": "II",
+    "dateExam": "29/12/24",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "id": "",
+    "courseId": "PHY1108",
+    "name": "Vật lý đại cương 2",
+    "credits": 3,
+    "semester": "II",
+    "dateExam": "30/12/24",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "id": "",
+    "courseId": "ITT1203",
+    "name": "Cấu trúc dữ liệu và giải thuật",
+    "credits": 3,
+    "semester": "II",
+    "dateExam": "31/12/24",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "id": "",
+    "courseId": "ITT1204",
+    "name": "Thực hành Cấu trúc dữ liệu và giải thuật",
+    "credits": 1,
+    "semester": "II",
+    "dateExam": "01/01/25",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "id": "",
+    "courseId": "ITT1205",
+    "name": "Cơ sở dữ liệu",
+    "credits": 3,
+    "semester": "II",
+    "dateExam": "02/01/25",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "id": "",
+    "courseId": "ITT1206",
+    "name": "Thực hành Cơ sở dữ liệu",
+    "credits": 1,
+    "semester": "II",
+    "dateExam": "03/01/25",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "id": "",
+    "courseId": "ITT1207",
+    "name": "Lập trình hướng đối tượng",
+    "credits": 3,
+    "semester": "II",
+    "dateExam": "04/01/25",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "id": "",
+    "courseId": "ITT1208",
+    "name": "Thực hành Lập trình hướng đối tượng",
+    "credits": 1,
+    "semester": "II",
+    "dateExam": "05/01/25",
+    "createdAt": "",
+    "updatedAt": ""
+  },
+  {
+    "id": "",
+    "courseId": "ITT1209",
+    "name": "Mạng máy tính",
+    "credits": 3,
+    "semester": "II",
+    "dateExam": "06/01/25",
+    "createdAt": "",
+    "updatedAt": ""
+  }
+]

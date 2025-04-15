@@ -5,17 +5,18 @@ import { Timestamp } from 'firebase/firestore';
  */
 export interface Grade {
   id?: string;              // Firestore document ID
-  studentId: string;        // Reference to student ID 
-  courseId: string;         // Reference to course ID
-  finalScore: number;       // Grade value (e.g., 8.5)
-  semester: string;         // Semester when grade was received (e.g., 20221)
-  createdAt?: Timestamp;    // When record was created
-  updatedAt?: Timestamp;    // When record was last updated
+  studentId: string;        // Mã SV
+  courseId: string;         // BAS1203
+  finalScore: number;       // THI KTHP
+  semester: string;         // học kỳ
+  notes: string;            // Ghi chú
+  createdAt?: Timestamp;    // ''
+  updatedAt?: Timestamp;    // ''
   componentScores?: {
     attendance: number,     // Điểm TN-CC
     midterm: number,        // Điểm TBKT
     assignment: number,     // Điểm BTTL
-    finalExam: number | string   // Điểm Thi (Lưu ý trường hợp "C" - Cấm thi, có thể lưu null/0 và ghi chú)
+    finalExam: number | string   // Điểm Thi 
   }
 }
 

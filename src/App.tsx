@@ -1,6 +1,6 @@
 import { MainLayout } from "@/components/layout/MainLayout/index";
-import { Dashboard } from "@/components/pages/Dashboard";
-import { UploadGrades } from "@/components/pages/UploadGrades";
+import Dashboard from "@/pages/Dashboard";
+import UploadGrades from "@/pages/UploadGrades";
 import { GlobalStyle } from "@/utility/styles";
 import { ThemeProvider } from "@/utility/contexts";
 import { AuthProvider, useAuth } from "@/utility/contexts";

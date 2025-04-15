@@ -6,12 +6,9 @@ import { GradeRecord } from "./grade";
  */
 export interface Student {
   id: string; // Firestore document ID
-  studentId: string; // School-assigned student ID
-  name: string; // Full name of student
-  class: string; // Class name/identifier
-  grades: GradeRecord[]; // List of grades
-  createdAt: Timestamp; // Record creation timestamp
-  updatedAt: Timestamp; // Record update timestamp
+  studentId: string; // Mã SV
+  name: string; // Họ và tên
+  class: string; // Lớp
 }
 
 /**
