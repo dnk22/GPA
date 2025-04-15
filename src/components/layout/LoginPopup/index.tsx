@@ -3,7 +3,7 @@ import { Lock } from 'lucide-react';
 import { useAuth } from '@/utility/contexts';
 import { APP_CONSTANTS } from '@/utility/constants';
 import {
-  PopupOverlay,
+  Overlay,
   PopupContainer,
   Title,
   Form,
@@ -44,7 +44,7 @@ export const LoginPopup: React.FC<LoginPopupProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <PopupOverlay onClick={onClose}>
+    <Overlay>
       <PopupContainer onClick={(e: React.MouseEvent) => e.stopPropagation()}>
         <Title>Đăng Nhập</Title>
         <Form onSubmit={handleSubmit}>
@@ -62,6 +62,6 @@ export const LoginPopup: React.FC<LoginPopupProps> = ({ isOpen, onClose }) => {
           <Button type="submit">Đăng Nhập</Button>
         </Form>
       </PopupContainer>
-    </PopupOverlay>
+    </Overlay>
   );
-}; 
+};

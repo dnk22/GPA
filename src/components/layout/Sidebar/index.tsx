@@ -5,7 +5,11 @@ import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '@/utility/contexts';
 import { LoginPopup } from '../LoginPopup';
 
-export const Sidebar = () => {
+interface SidebarProps {
+  className?: string;
+}
+
+export const Sidebar = ({ className = '' }: SidebarProps) => {
   const location = useLocation();
   const { isAuthenticated, logout } = useAuth();
   const [showLoginPopup, setShowLoginPopup] = useState(false);
@@ -20,7 +24,7 @@ export const Sidebar = () => {
 
   return (
     <>
-      <SidebarContainer>
+      <SidebarContainer className={className}>
         <MenuTitle>GPA Management</MenuTitle>
         
         <MenuItem $active={location.pathname === '/' || location.pathname === '/dashboard'}>
@@ -57,4 +61,4 @@ export const Sidebar = () => {
       <LoginPopup isOpen={showLoginPopup} onClose={handleClosePopup} />
     </>
   );
-}; 
+};

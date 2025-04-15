@@ -18,6 +18,11 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    overflow-x: hidden;
   }
 
   body {
@@ -30,6 +35,8 @@ export const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.text};
     transition: background-color 0.6s ease-in-out, color 0.6s ease-in-out;
     overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
   }
 
   #root {
@@ -61,4 +68,48 @@ export const GlobalStyle = createGlobalStyle`
   .dark-ripple {
     background-color: ${themeConfig.dark.background};
   }
-`; 
+
+  /* Mobile menu transitions */
+  @media (max-width: 768px) {
+    .sidebar-container {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+      z-index: 900;
+    }
+
+    .overlay.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  /* Smooth scrolling */
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  /* Better touch scrolling */
+  @supports (-webkit-overflow-scrolling: touch) {
+    body {
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+
+  /* Prevent text size adjustment on orientation change */
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+`;

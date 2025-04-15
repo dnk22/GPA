@@ -9,6 +9,20 @@ export const SidebarContainer = styled.div`
   transition: all 0.2s ease-in-out;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 768px) {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    transform: translateX(-100%);
+    height: auto;
+    justify-content: space-between;
+    &.open {
+      transform: translateX(0);
+    }
+  }
 `;
 
 export const MenuTitle = styled.h2`
@@ -17,6 +31,12 @@ export const MenuTitle = styled.h2`
   color: ${({ theme }) => theme.primary};
   margin-bottom: 1.5rem;
   padding: 0.5rem 1rem;
+
+  @media (max-width: 768px) {
+    display: none;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
 `;
 
 interface MenuItemProps {
@@ -78,10 +98,34 @@ export const MenuItem = styled.div<MenuItemProps>`
     text-decoration: none;
     width: 100%;
   }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
 `;
 
 export const SidebarFooter = styled.div`
   margin-top: auto;
   border-top: 1px solid ${({ theme }) => theme.border};
   padding-top: 1rem;
+`;
+
+export const MobileMenuButton = styled.button`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: ${({ theme }) => theme.text};
+    padding: 0.5rem;
+    cursor: pointer;
+  }
 `;

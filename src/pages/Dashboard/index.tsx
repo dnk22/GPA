@@ -9,10 +9,21 @@ import {
   flexRender,
   SortingState,
 } from '@tanstack/react-table';
-import { Search } from 'lucide-react';
+import { Search, Users, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Student } from '@/services/firebase/schemas/student';
 import { getAllStudents, searchStudents } from '@/services/firebase/models/student';
-import { PageContainer, Title, SearchBar, SearchInput, SearchButton, TableContainer, StyledTable, Pagination, PaginationButton } from './styles';
+import { 
+  PageContainer, 
+  Title, 
+  SearchBar, 
+  SearchInput, 
+  SearchButton, 
+  TableContainer, 
+  StyledTable, 
+  Pagination, 
+  PaginationButton,
+  EmptyState 
+} from './styles';
 
 // Column helper với type Student
 const columnHelper = createColumnHelper<Student>();
@@ -138,9 +149,17 @@ const Dashboard = () => {
       
       <TableContainer>
         {loading ? (
-          <div>Đang tải dữ liệu...</div>
+          <EmptyState>
+            <div className="loading-spinner" />
+            <h3>Đang tải dữ liệu...</h3>
+            <p>Vui lòng đợi trong giây lát</p>
+          </EmptyState>
         ) : students.length === 0 ? (
-          <div>Không tìm thấy sinh viên nào</div>
+          <EmptyState>
+            <Users size={64} />
+            <h3>Không tìm thấy sinh viên nào</h3>
+            <p>Thử tìm kiếm với từ khóa khác hoặc kiểm tra lại bộ lọc của bạn</p>
+          </EmptyState>
         ) : (
           <StyledTable>
             <thead>
@@ -177,25 +196,29 @@ const Dashboard = () => {
         )}
       </TableContainer>
       
-      <Pagination>
-        <PaginationButton 
-          onClick={() => table.previousPage()} 
-          disabled={!table.getCanPreviousPage()}
-        >
-          Trang trước
-        </PaginationButton>
-        <span>
-          Trang {table.getState().pagination.pageIndex + 1} / {table.getPageCount()}
-        </span>
-        <PaginationButton 
-          onClick={() => table.nextPage()} 
-          disabled={!table.getCanNextPage()}
-        >
-          Trang sau
-        </PaginationButton>
-      </Pagination>
+      {!loading && students.length > 0 && (
+        <Pagination>
+          <PaginationButton 
+            onClick={() => table.previousPage()} 
+            disabled={!table.getCanPreviousPage()}
+          >
+            <ChevronLeft size={16} />
+            <span>Trang trước</span>
+          </PaginationButton>
+          <span>
+            Trang {table.getState().pagination.pageIndex + 1} / {table.getPageCount()}
+          </span>
+          <PaginationButton 
+            onClick={() => table.nextPage()} 
+            disabled={!table.getCanNextPage()}
+          >
+            <span>Trang sau</span>
+            <ChevronRight size={16} />
+          </PaginationButton>
+        </Pagination>
+      )}
     </PageContainer>
   );
 };
 
-export default Dashboard; 
+export default Dashboard;

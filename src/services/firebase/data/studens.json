@@ -15,19 +15,44 @@
     "class": "D24TXCN04-K"
   },
   {
+    "studentId": "K24DTCN141",
+    "name": "Nguyễn Thị My",
+    "class": "D24TXCN04-K"
+  },
+  {
+    "studentId": "K24DTCN158",
+    "name": "Nguyễn Kiều Trang",
+    "class": "D24TXCN04-K"
+  },
+  {
+    "studentId": "K24DTCN125",
+    "name": "Phan Thị Giang",
+    "class": "D24TXCN04-K"
+  },
+  {
     "studentId": "K24DTCN135",
     "name": "Trần Mạnh Linh",
     "class": "D24TXCN04-K"
   },
   {
     "studentId": "K24DTCN163",
-    "name": "Dương Bá Tuyên",
+    "name": "Dương Bả Tuyên",
     "class": "D24TXCN04-K"
   },
   {
     "studentId": "K24DTCN186",
-    "name": "Trần Thị Hà Giang",
+    "name": "Trần Thị Hả Giang",
     "class": "D24TXCN05-K"
+  },
+  {
+    "studentId": "K24DTCN152",
+    "name": "Nguyễn Hữu Thành",
+    "class": "D24TXCN04-K"
+  },
+  {
+    "studentId": "K24DTCN166",
+    "name": "Trần Văn Vượng",
+    "class": "D24TXCN04-K"
   },
   {
     "studentId": "K24DTCN146",
@@ -37,6 +62,16 @@
   {
     "studentId": "K24DTCN136",
     "name": "Trần Phương Linh",
+    "class": "D24TXCN04-K"
+  },
+  {
+    "studentId": "K24DTCN116",
+    "name": "Chiến Vũ Minh",
+    "class": "D24TXCN04-K"
+  },
+  {
+    "studentId": "K24DTCN140",
+    "name": "Nguyễn Xuân Manh",
     "class": "D24TXCN04-K"
   },
   {
@@ -55,8 +90,23 @@
     "class": "D24TXCN04-K"
   },
   {
+    "studentId": "K24DTCN112",
+    "name": "Vũ Tuấn Anh",
+    "class": "D24TXCN04-K"
+  },
+  {
     "studentId": "K24DTCN110",
     "name": "Nguyễn Thị Ngọc Anh",
+    "class": "D24TXCN04-K"
+  },
+  {
+    "studentId": "K24DTCN165",
+    "name": "Hoàng quốc Vòng",
+    "class": "D24TXCN04-K"
+  },
+  {
+    "studentId": "K24DTCN142",
+    "name": "Phạm Thị Nam",
     "class": "D24TXCN04-K"
   },
   {
@@ -66,7 +116,7 @@
   },
   {
     "studentId": "K24DTCN134",
-    "name": "Đinh Thị Thuỳ Linh",
+    "name": "Đinh Thị Thuỷ Linh",
     "class": "D24TXCN04-K"
   },
   {
@@ -85,6 +135,11 @@
     "class": "D24TXCN04-K"
   },
   {
+    "studentId": "K24DTCN109",
+    "name": "Nguyễn Thị Vân Anh",
+    "class": "D24TXCN04-K"
+  },
+  {
     "studentId": "K24DTCN155",
     "name": "Nguyễn Như Thiết",
     "class": "D24TXCN04-K"
@@ -92,6 +147,21 @@
   {
     "studentId": "K24DTCN132",
     "name": "Nguyễn Thị Hương",
+    "class": "D24TXCN04-K"
+  },
+  {
+    "studentId": "K24DTCN115",
+    "name": "Nguyễn Đức Anh",
+    "class": "D24TXCN04-K"
+  },
+  {
+    "studentId": "K24DTCN139",
+    "name": "Lê Đình Mạnh",
+    "class": "D24TXCN04-K"
+  },
+  {
+    "studentId": "K24DTCN153",
+    "name": "Nguyễn Duy Thành",
     "class": "D24TXCN04-K"
   },
   {
@@ -105,243 +175,18 @@
     "class": "D24TXCN04-K"
   },
   {
-    "studentId": "K24DTCN150",
-    "name": "Chu Thị Quỳnh",
+    "studentId": "K24DTCN128",
+    "name": "Hoàng Minh Hà",
     "class": "D24TXCN04-K"
   },
-  {
-    "studentId": "B24DTCN012",
-    "name": "Nguyễn Văn Hiển",
-    "class": "D24TXCN01-B"
-  },
-  {
-    "studentId": "B24DTCN011",
-    "name": "Trần Văn Hào",
-    "class": "D24TXCN01-B"
-  },
-  {
-    "studentId": "B24DTCN013",
-    "name": "Phạm Mạnh Hùng",
-    "class": "D24TXCN01-B"
-  },
-  {
-    "studentId": "B24DTCN016",
-    "name": "Lê Đức Toàn",
-    "class": "D24TXCN01-B"
-  },
-  {
-    "studentId": "B24DTCN017",
-    "name": "Nguyễn Thành Trung",
-    "class": "D24TXCN01-B"
-  },
-  {
-    "studentId": "K24DTCN170",
-    "name": "Nguyễn Đức Anh",
-    "class": "D24TXCN05-K"
-  },
-  {
-    "studentId": "K24DTCN171",
-    "name": "Lê Tuấn Anh",
-    "class": "D24TXCN05-K"
-  },
-  {
-    "studentId": "K24DTCN168",
-    "name": "Phan Phương Anh",
-    "class": "D24TXCN05-K"
-  },
-  {
-    "studentId": "K24DTCN169",
-    "name": "Nguyễn Quốc Anh",
-    "class": "D24TXCN05-K"
-  },
-  {
-    "studentId": "K24DTCN167",
-    "name": "Phạm Hoàng Anh",
-    "class": "D24TXCN05-K"
-  },
-  {
-    "studentId": "K24DTCN172",
-    "name": "Võ Thanh Bình",
-    "class": "D24TXCN05-K"
-  },
-  {
-    "studentId": "K24DTCN173",
-    "name": "Nguyễn Đức Bình",
-    "class": "D24TXCN05-K"
-  },
-  {
-    "studentId": "K24DTCN174",
-    "name": "Phan Huy Cương",
-    "class": "D24TXCN05-K"
-  },
-  {
-    "studentId": "K24DTCN182",
-    "name": "Trần Tiến Dũng",
-    "class": "D24TXCN05-K"
-  },
-  {
-    "studentId": "K24DTCN185",
-    "name": "Trần Tăng Dương",
-    "class": "D24TXCN05-K"
-  },
-  {
-    "studentId": "B24DTCN002",
-    "name": "Nguyễn Thế Anh",
-    "class": "D24TXCN01-B"
-  },
-  {
-    "studentId": "B24DTCN016",
-    "name": "Lê Đức Toàn",
-    "class": "D24TXCN01-B"
-  },
-  {
-    "studentId": "K23DTQT134",
-    "name": "Nghiêm Nguyệt Ánh",
-    "class": "D23TXQT08-K"
-  },
-  {
-    "studentId": "K24DTCN043",
-    "name": "Đặng Nhật Anh",
-    "class": "D24TXCN02-K"
-  },
-  {
-    "studentId": "B24DTQT004",
-    "name": "Lưu Anh Tuấn",
-    "class": "D24TXQT01-B"
-  },
-  {
-    "studentId": "K24DTCN005",
-    "name": "Nguyễn Thị Ngọc Châu",
-    "class": "D24TXCN01-K"
-  },
-  {
-    "studentId": "K24DTCN006",
-    "name": "Phạm Thị Lan Chi",
-    "class": "D24TXCN01-K"
-  },
-  {
-    "studentId": "K24DTCN007",
-    "name": "Đoàn Minh Dũng",
-    "class": "D24TXCN01-K"
-  },
-  {
-    "studentId": "K24DTCN014",
-    "name": "Nguyễn Thị Hoa",
-    "class": "D24TXCN01-K"
-  },
-  {
-    "studentId": "K24DTCN308",
-    "name": "Phạm Minh Đức",
-    "class": "D24TXCN07-K"
-  },
-  {
-    "studentId": "K24DTCN120",
-    "name": "Đặng Vương",
+    {
+    "studentId": "K24DTCN149",
+    "name": "Trần Lê Quý",
     "class": "D24TXCN04-K"
-  },
-  {
-    "studentId": "K24DTCN310",
-    "name": "Nguyễn Trung Đức",
-    "class": "D24TXCN07-K"
-  },
-  {
-    "studentId": "K24DTCN133",
-    "name": "Nguyễn Minh Khánh",
-    "class": "D24TXCN04-K"
-  },
-  {
-    "studentId": "K24DTCN112",
-    "name": "Vũ Tuấn Anh",
-    "class": "D24TXCN04-K"
-  },
-  {
-    "studentId": "K24DTCN113",
-    "name": "Ngô Mai Anh",
-    "class": "D24TXCN04-K"
-  },
-  {
-    "studentId": "K24DTCN372",
-    "name": "Mai Chí Linh",
-    "class": "D24TXCN08-K"
-  },
-  {
-    "studentId": "K24DTCN140",
-    "name": "Nguyễn Xuân Mạnh",
-    "class": "D24TXCN04-K"
-  },
-  {
-    "studentId": "K24DTCN370",
-    "name": "Trần Văn Khanh",
-    "class": "D24TXCN08-K"
-  },
-  {
-    "studentId": "K24DTCN375",
-    "name": "Vũ Hải Yến",
-    "class": "D24TXCN08-K"
-  },
-  {
-    "studentId": "K24DTCN500",
-    "name": "Đỗ Thị Vân Anh",
-    "class": "D24TXCN13-K"
-  },
-  {
-    "studentId": "K24DTCN378",
-    "name": "Nguyễn Minh Hiền",
-    "class": "D24TXCN08-K"
-  },
-  {
-    "studentId": "K24DTCN442",
-    "name": "Trần Đức Hiếu",
-    "class": "D24TXCN11-K"
-  },
-  {
-    "studentId": "K24DTCN152",
-    "name": "Nguyễn Hữu Thành",
-    "class": "D24TXCN04-K"
-  },
-  {
-    "studentId": "K24DTCN126",
-    "name": "Lê Việt Hà",
-    "class": "D24TXCN04-K"
-  },
-  {
-    "studentId": "K24DTCN525",
-    "name": "Vũ Hoàng Linh",
-    "class": "D24TXCN13-K"
-  },
-  {
-    "studentId": "K24DTCN514",
-    "name": "Mai Đức Huy",
-    "class": "D24TXCN13-K"
-  },
-  {
-    "studentId": "K24DTCN546",
-    "name": "Trần Nhật Quang",
-    "class": "D24TXCN13-K"
   },
   {
     "studentId": "K24DTCN150",
     "name": "Chu Thị Quỳnh",
-    "class": "D24TXCN04-K"
-  },
-  {
-    "studentId": "K24DTCN547",
-    "name": "Phạm Thanh Trinh",
-    "class": "D24TXCN13-K"
-  },
-  {
-    "studentId": "K24DTCN176",
-    "name": "Kim Nguyễn Nhật Cường",
-    "class": "D24TXCN05-K"
-  },
-  {
-    "studentId": "B24DTCN028",
-    "name": "Lê Sơn Hải",
-    "class": "D24TXCN03-B"
-  },
-  {
-    "studentId": "K24DTQT134",
-    "name": "Nghiêm Nguyệt Ánh",
-    "class": "D23TXQT08-K"
+    "class": "D24TXCN04-K" 
   }
 ]

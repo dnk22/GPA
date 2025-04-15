@@ -3,12 +3,21 @@ import styled from "styled-components";
 export const PageContainer = styled.div`
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
+
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+  }
 `;
 
 export const Title = styled.h2`
   margin-bottom: 2rem;
   color: ${({ theme }) => theme.text};
+
+  @media (max-width: 768px) {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
 `;
 
 // Layout styles
@@ -16,14 +25,17 @@ export const LayoutRow = styled.div`
   display: flex;
   gap: 2rem;
   margin-bottom: 2rem;
-  align-items: center;
+  align-items: flex-start;
 
   @media (max-width: 768px) {
     flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
   }
 `;
 
 export const LeftColumn = styled.div`
+  flex: 1;
   min-width: 0;
 `;
 
@@ -31,20 +43,31 @@ export const RightColumn = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  min-width: 300px;
 
   @media (max-width: 768px) {
     width: 100%;
+    min-width: unset;
   }
 `;
 
 export const PreviewSection = styled.div`
   margin-top: 2rem;
+
+  @media (max-width: 768px) {
+    margin-top: 1rem;
+  }
 `;
 
 export const SectionTitle = styled.h3`
   margin-bottom: 1.5rem;
   color: ${({ theme }) => theme.text};
   font-size: 1.25rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+  }
 `;
 
 // Tab navigation
@@ -52,10 +75,21 @@ export const TabContainer = styled.div`
   display: flex;
   border-bottom: 1px solid ${({ theme }) => theme.border};
   margin-bottom: 1.5rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+  }
 `;
 
 interface TabItemProps {
-  $active: boolean;
+  $active?: boolean;
 }
 
 export const TabItem = styled.div<TabItemProps>`
@@ -66,9 +100,15 @@ export const TabItem = styled.div<TabItemProps>`
     ${({ theme, $active }) => ($active ? theme.primary : "transparent")};
   cursor: pointer;
   transition: all 0.2s;
+  white-space: nowrap;
 
   &:hover {
     color: ${({ theme }) => theme.primary};
+  }
+
+  @media (max-width: 768px) {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
   }
 `;
 
@@ -182,19 +222,30 @@ export const UploadArea = styled.div<UploadAreaProps>`
   border: 2px dashed
     ${({ theme, $isSuccess }) => ($isSuccess ? theme.success : theme.border)};
   border-radius: 8px;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: ${({ theme, $isSuccess }) =>
     $isSuccess ? `${theme.success}10` : theme.background};
-  padding: 10px;
+  transition: all 0.2s;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
 
   .file-info {
     display: flex;
     align-items: center;
     gap: 1rem;
     width: 100%;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+    }
   }
 `;
 
@@ -249,10 +300,22 @@ export const ExtractedDataContainer = styled.div`
   padding: 1.5rem;
   background-color: ${({ theme }) => theme.background};
   margin-bottom: 1.5rem;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+    border-radius: 4px;
+  }
 `;
 
 export const PreviewContainer = styled.div`
   margin-bottom: 2rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+
+  @media (max-width: 768px) {
+    margin: 0 -0.5rem;
+    width: calc(100% + 1rem);
+  }
 
   h4 {
     margin-bottom: 1rem;
@@ -315,6 +378,7 @@ export const ModalOverlay = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 1000;
+  padding: 1rem;
 `;
 
 export const ModalContainer = styled.div`
@@ -326,24 +390,30 @@ export const ModalContainer = styled.div`
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-height: 100vh;
+    border-radius: 0;
+  }
 `;
 
 export const ModalHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 20px;
-  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem;
+  border-bottom: 1px solid ${({ theme }) => theme.border};
 
   h3 {
     margin: 0;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
   }
 `;
 
 export const ModalContent = styled.div`
-  padding: 20px;
+  padding: 1rem;
   overflow-y: auto;
   flex: 1;
 `;
@@ -351,9 +421,17 @@ export const ModalContent = styled.div`
 export const ModalFooter = styled.div`
   display: flex;
   justify-content: flex-end;
-  gap: 12px;
-  padding: 16px 20px;
-  border-top: 1px solid #e5e7eb;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-top: 1px solid ${({ theme }) => theme.border};
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    button {
+      width: 100%;
+    }
+  }
 `;
 
 export const CloseButton = styled.button`
